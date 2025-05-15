@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Vincent Esche | Staff Software Engineer | Berlin</title>
+
+        <link rel="icon" href="favicon.ico" type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://use.fontawesome.com/releases/v6.7.0/css/all.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <script>
+            function computeYearsOfExperience() {
+                let currentYear = new Date().getFullYear();
+                let yearSpan = document.getElementById("years-of-experience");
+                yearSpan.textContent = currentYear - 2013;
+            }
+        </script>
+    </head>
+    <body onload="computeYearsOfExperience()">
+        <main>
+            <div class="intro">Hello, I'm Vincent!</div>
+            <div class="tagline">
+                <!-- Vincent Esche | Staff Software Engineer | Berlin -->
+                <span style="font-weight: 400">Staff Software Engineer</span>
+                <br />
+                <span style="font-weight: 350">Vincent Esche</span>
+                <br />
+                <span style="font-weight: 300">Berlin</span>
+            </div>
+            <div class="profile">
+                <p>
+                    Staff-level software engineer with
+                    <span
+                        id="years-of-experience"
+                        onload="computeYearsOfExperience()"
+                        >10</span
+                    >+ years of experience architecting high-performance,
+                    user-centric systems across mobile, embedded, and
+                    cross-platform domains.
+                </p>
+
+                <p>
+                    Specialized in Rust and Swift since 2014, with a deep focus
+                    on efficient, maintainable software and a passion for
+                    algorithms and data structures.
+                </p>
+            </div>
+            <div class="icons-files">
+                <a target="_blank" href="./pdfs/resume.pdf">
+                    <i
+                        class="fa-regular fa-file"
+                        aria-hidden="true"
+                        title="Resume"
+                    ></i>
+
+                    <span>Resume</span>
+                </a>
+
+                <a target="_blank" href="./pdfs/portfolio.pdf">
+                    <i
+                        class="fa-regular fa-file"
+                        aria-hidden="true"
+                        title="Portfolio"
+                    ></i>
+
+                    <span>Portfolio</span>
+                </a>
+            </div>
+            <div class="icons-social">
+                <a target="_blank" href="https://github.com/regexident">
+                    <i
+                        class="fa-brands fa-square-github"
+                        aria-hidden="true"
+                        title="Github"
+                    ></i>
+                    <span class="sr-only">Github</span>
+                </a>
+                <a
+                    target="_blank"
+                    href="https://stackoverflow.com/users/227536/regexident"
+                >
+                    <i
+                        class="fa-brands fa-stack-overflow"
+                        aria-hidden="true"
+                        title="StackOverflow"
+                    ></i>
+                    <span class="sr-only">StackOverflow</span>
+                </a>
+                <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/vincent-esche"
+                >
+                    <i
+                        class="fa-brands fa-linkedin"
+                        aria-hidden="true"
+                        title="LinkedIn"
+                    ></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </div>
+        </main>
+    </body>
+</html>
